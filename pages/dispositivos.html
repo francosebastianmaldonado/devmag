@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMag</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+</head>
+<body>
+    <nav>
+        <div class="section-a">
+            <div class="logo">
+                <ion-icon name="layers"></ion-icon>
+                <span>DevMag</span>
+            </div>
+            <a href="../index.html" class="btn"><ion-icon name="home-outline"></ion-icon>Inicio</a>
+            <a href="#" class="btn active"><ion-icon name="laptop-outline"></ion-icon>Dispositivos</a>
+        </div>
+        <div class="section-b">
+            <a href="#" class="btn"><ion-icon name="help-buoy-outline"></ion-icon>Soporte</a>
+            <a href="#" class="btn"><ion-icon name="settings-outline"></ion-icon>Configuración</a>
+            <div class="profile-box">
+                <div class="profile-img">
+                    <img src="..\img\chess.jpg" alt="">
+                </div>
+
+                <div class="profile-data">
+                    <span class="name">Franco Maldonado</span>
+                    <span class="email">mfranco@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Dispositivos</h1>
+        <div class="list-container">
+            <table class="table-devices">
+                
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tipo</th>
+                        <th>Fabricante</th>
+                        <th>Modelo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr data-href="75224.html">
+                        <td>75224</td>
+                        <td>Telefono</td>
+                        <td>Apple Inc.</td>
+                        <td>Iphone 8</td>
+                    </tr>
+                    <tr>
+                        <td>93432</td>
+                        <td>Teclado</td>
+                        <td>Microsoft</td>
+                        <td>Wired Keyboard 600</td>
+                    </tr>
+                    <tr data-href="35423.html">
+                        <td>35423</td>
+                        <td>Ordenador de sobremesa</td>
+                        <td>Lenovo</td>
+                        <td>Thinkcentre M Series</td>
+                    </tr>
+                    <tr>
+                        <td>54876</td>
+                        <td>Mouse</td>
+                        <td>Microsoft</td>
+                        <td>Basic Optical V2.0 1113</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <span class="page-count">Pagina 1 de 1</span>
+        </div>
+    </main>
+</body>
+
+<script type="module" src="../js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

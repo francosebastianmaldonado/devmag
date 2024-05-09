@@ -1,0 +1,240 @@
+/* Cabecera de dispositivo
+   ------------------------------------- */
+
+.sector-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.sector-titulo > .imagen {
+    display: flex;
+    align-items: center;
+
+    min-height: 75px;
+    min-width: 75px;
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid gray; */
+    border-radius: 50px;
+    background-color: gainsboro;
+}
+
+.sector-titulo > .imagen > ion-icon {
+    margin: auto;
+    width: 50%;
+    font-size: 36px;
+}
+
+.modelo-tipo {
+    margin-left: 15px;
+    height: 90%;
+    /* border: 1px solid red; */
+}
+
+.modelo-tipo > h1 {
+    font-size: 24px;
+}
+
+.modelo-tipo > h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* Detalles de dispositivo
+   ------------------------------------- */
+.sector-dispositivo-detalles {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    /* border: 1px solid gainsboro; */
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.sector-dispositivo-detalles.row {
+    flex-direction: row;
+}
+
+.sector-dispositivo-detalles > h4 {
+    margin-bottom: 20px;
+}
+
+.tabla-dispositivo-detalles {
+    table-layout: fixed;
+}
+
+.tabla-dispositivo-detalles > thead > tr {
+    color: gray;
+    font-size: 12px;
+}
+
+.tabla-dispositivo-detalles > thead > tr > td {
+    width: 100px;
+}
+
+.tabla-dispositivo-detalles > tbody > tr {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    
+    height: 30px;
+}
+
+
+/* Badge (Insignia) para datos de tabla
+   ---------------------------------- */
+.badge {
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+
+    color: gray;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.badge.verde {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.2);
+}
+
+.badge.amarillo {
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.2);
+}
+
+.badge.rojo {
+    color:red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+
+/* Tarjeta de detalles
+   ------------------------------ */
+.tarjeta-detalles {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 7px;
+    padding: 20px;
+
+    width: 200px;
+    max-width: 200px;
+}
+
+.tarjeta-detalles > .contenedor-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tarjeta-detalles > .contenedor-titulo > .titulo {
+    margin-left: 10px;
+    color: gray;
+    font-size: 14px;
+}
+
+.tarjeta-detalles > .contenedor-titulo > .imagen {
+    display: flex;
+    align-items: center;
+
+    min-height: 40px;
+    min-width: 40px;
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid gray; */
+    border-radius: 50px;
+    background-color: gainsboro;
+}
+
+.tarjeta-detalles > .contenedor-titulo > .imagen > ion-icon {
+    margin: auto;
+    width: 50%;
+    font-size: 36px;
+}
+
+.tarjeta-detalles > .contenedor-detalles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.tarjeta-detalles > .contenedor-detalles > .detalle {
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Lista */
+.lista-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* Sector: Barra de direccion
+   -------------------------------- */
+.sector-barra-direccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    font-size: 12px;
+}
+
+.sector-barra-direccion > .direccion {
+    margin-top: -3px;
+    color: gray;
+}
+
+.sector-barra-direccion > .badge {
+    margin-top: -1px;
+}
+
+
+/* Disposicion para celulares
+   --------------------------------- */
+   @media only screen and (max-width: 600px) {
+    .sector-titulo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    /* Lista */
+    .lista-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lista-row > .tarjeta-detalles {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .lista-row > .tarjeta-detalles > .contenedor-detalles {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lista-row > .tarjeta-detalles > .contenedor-detalles > .detalle {
+        margin-top: 3px;
+    }
+}

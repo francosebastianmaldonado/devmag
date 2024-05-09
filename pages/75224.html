@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMag</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/device.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+</head>
+<body>
+    <nav>
+
+        <div class="section-a">
+            <div class="btn-menu-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+
+            <div class="logo">
+                <ion-icon name="layers"></ion-icon>
+                <span>DevMag</span>
+            </div>
+            <a href="#" class="btn active"><ion-icon name="home-outline"></ion-icon>Inicio</a>
+            <a href="dispositivos.html" class="btn"><ion-icon name="laptop-outline"></ion-icon>Dispositivos</a>
+        </div>
+
+        <div class="section-b">
+            <a href="#" class="btn"><ion-icon name="help-buoy-outline"></ion-icon>Soporte</a>
+            <a href="#" class="btn"><ion-icon name="settings-outline"></ion-icon>Configuración</a>
+            <div class="profile-box">
+                <div class="profile-img">
+                    <img src="..\img\chess.jpg" alt="">
+                </div>
+
+                <div class="profile-data">
+                    <span class="name">Franco Maldonado</span>
+                    <span class="email">mfranco@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="menu-top">
+
+            <div class="btn-menu-container">
+                <span class="btn-menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </span>
+            </div>
+            
+            <div class="logo-container">
+                <ion-icon name="layers"></ion-icon>
+                <span>DevMag</span>
+            </div>
+
+            <div class="btn-menu-container">
+                <span class="btn-menu">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Sector: Direccion -->
+        <div class="sector-barra-direccion">
+            <span class="direccion">Dispositivos</span>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+            <span class="badge">75224</span>
+        </div>
+
+        <!-- Sector: Titulo -->
+        <div class="sector-titulo">
+            <div class="imagen">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="modelo-tipo">
+                <h1>Apple Iphone 8 - 75224</h1>
+                <h3>Telefono</h3>
+            </div>
+        </div>
+
+        <!-- Sector: Detalles de dispositivo -->
+        <div class="sector-dispositivo-detalles">
+            <h4>Detalles de dispositivo</h4>
+            <table class="tabla-dispositivo-detalles">
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Fabricante</td>
+                        <td>Categoria</td>
+                        <td>Identificacion</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Iphone 8</td>
+                        <td>Apple Inc.</td>
+                        <td>Telefono</td>
+                        <td>75224</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tabla-dispositivo-detalles">
+                <thead>
+                    <tr>
+                        <td>Fecha de compra</td>
+                        <td>Estado</td>
+                        <td>Condicion</td>
+                        <td>Comprador</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8 de Mayo, 2024</td>
+                        <td>Asignado</td>
+                        <td><span class="badge amarillo">Regular</span></td>
+                        <td>Franco Maldonado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sector: Soporte tecnico del fabricante  -->
+        <div class="sector-dispositivo-detalles">
+            <h4>Soporte tecnico del fabricante</h4>
+            <table class="tabla-dispositivo-detalles">
+                <thead>
+                    <tr>
+                        <td>Fecha de fabricacion</td>
+                        <td>Fecha de compra</td>
+                        <td>Fecha de vencimiento</td>
+                        <td>Expira en</td>
+                        <td>Estado</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4 de Febrero, 2021</td>
+                        <td>5 de Mayo, 2023</td>
+                        <td>5 de Mayo, 2024</td>
+                        <td>0 dias</td>
+                        <td><span class="badge rojo">Expiro</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="sector-dispositivo-detalles">
+            <h4>Seguridad y sistema operativo</h4>
+
+
+            <div class="lista-row">
+                <!-- Tarjeta: Antivirus -->
+                <div class="tarjeta-detalles">
+                    <div class="contenedor-titulo">
+                        <div class="imagen"><ion-icon name="shield-outline"></ion-icon></div>
+                        <span class="titulo">Antivirus</span>
+                    </div>
+                    <div class="contenedor-detalles">
+                        <span class="detalle">(Ninguno)</span>
+                        <div><span class="badge rojo">Sin proteccion</span></div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Sistema Operativo -->
+                <div class="tarjeta-detalles">
+                    <div class="contenedor-titulo">
+                        <div class="imagen"><ion-icon name="cog-outline"></ion-icon></div>
+                        <span class="titulo">Sistema operativo</span>
+                    </div>
+                    <div class="contenedor-detalles">
+                        <span class="detalle">iOS 12 (iOS 13 ultima version compatible)</span>
+                        <div><span class="badge amarillo">Desactualizado</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+<script src="../js/script.js"></script>
+<script src="http://momentjs.com/downloads/moment.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
