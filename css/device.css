@@ -237,4 +237,30 @@
     .lista-row > .tarjeta-detalles > .contenedor-detalles > .detalle {
         margin-top: 3px;
     }
+
+    /* TABLA */
+    .tabla-dispositivo-detalles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .tabla-dispositivo-detalles > thead > tr {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .tabla-dispositivo-detalles > thead > tr > td {
+        width: auto;
+    }
+
+    .tabla-dispositivo-detalles > tbody > tr {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: right;
+    }
 }
